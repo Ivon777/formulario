@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registro de sangre</title>
+    <style>
+        body{
+            background-color: rgb(62, 87, 87);
+        }
+        form{
+            margin: 0 auto; /* Espacio entre elementos */
+            width: 450px;
+            padding: 1em;
+            border: 1px solid #bcb1b1;
+            border-radius: 1em;
+        }
+        h2{
+            text-align: center;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        form li+li{
+        margin-top: 1em;
+        }
+        label{
+            display: inline-block;
+            width: 90px;
+            text-align: right;
+        }
+        input, textarea{
+            font: 1em sans-serif;
+            width: 350px;
+            box-sizing: border-box;
+            border: 1px solid #999;
+        }
+        textarea{
+            vertical-align: top;
+            height: 5em;
+        }
+        .button{
+            padding-left: 90px;
+            margin-left: .5em;
+        }
+    </style>
+</head>
+<body>
+    <h2>Registro de paciente</h2>
+<form action="index.html" method="post">
+    <ul>
+        <li>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre_paciente"
+            required="" placeholder="Nombre"> 
+        </li>
+        <li>
+            <label for="apellidoo">Apellido:</label>
+            <input type="text" id="apellido" name="nombre_paciente"
+            required="" placeholder="Apellido">
+        </li>
+        <li>
+            <label for="fechanac">Fecha de nacimiento</label>
+            <input type="date" name="fechanac_paciente" id="fechanac" required="">
+        </li>
+        <li>
+            <label for="email">Correo Electronico</label>
+            <input type="email" name="correo_paciente" id="email"
+            required="" placeholder="Correo'">
+        </li>
+        <li>
+            <label for="contra">Contraseña</label>
+            <input type="password" name="contra_paciente" id="contra">
+        </li>
+        <li>
+            <label for="direccion">Direccion</label>
+            <textarea name="direccion_paciente" id="direccion" required="Direccion"
+            ></textarea>
+        </li>
+        <li class="button">
+            <button type="submit"
+            id="btn_registro" name="btn_registro">Registro!</button>
+        </li>
+
+   </ul>
+</form>
+
+
+</body>
+</html>
